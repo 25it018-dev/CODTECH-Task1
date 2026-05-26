@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Personal Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#222;
+      color:white;
+      padding:20px 0;
+      position:sticky;
+      top:0;
+    }
+
+    nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      width:90%;
+      margin:auto;
+    }
+
+    nav h1{
+      font-size:28px;
+    }
+
+    nav ul{
+      display:flex;
+      list-style:none;
+    }
+
+    nav ul li{
+      margin-left:20px;
+    }
+
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-size:18px;
+    }
+
+    nav ul li a:hover{
+      color:orange;
+    }
+
+    .hero{
+      height:90vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      background:linear-gradient(to right, #4facfe, #00f2fe);
+      color:white;
+      padding:20px;
+    }
+
+    .hero h2{
+      font-size:50px;
+      margin-bottom:10px;
+    }
+
+    .hero p{
+      font-size:22px;
+      margin-bottom:20px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:white;
+      color:#333;
+      padding:12px 25px;
+      text-decoration:none;
+      border-radius:5px;
+      font-weight:bold;
+    }
+
+    .btn:hover{
+      background:orange;
+      color:white;
+    }
+
+    section{
+      padding:60px 20px;
+    }
+
+    .container{
+      width:90%;
+      margin:auto;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:30px;
+      font-size:36px;
+    }
+
+    .about p{
+      text-align:center;
+      max-width:700px;
+      margin:auto;
+      font-size:18px;
+    }
+
+    .skills{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+      gap:20px;
+    }
+
+    .skill-box{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      text-align:center;
+      box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .projects{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .project-box{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    .contact{
+      text-align:center;
+    }
+
+    .contact p{
+      margin:10px 0;
+      font-size:18px;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:15px;
+      margin-top:30px;
+    }
+
+    @media(max-width:768px){
+      .hero h2{
+        font-size:36px;
+      }
+
+      .hero p{
+        font-size:18px;
+      }
+
+      nav{
+        flex-direction:column;
+      }
+
+      nav ul{
+        margin-top:10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <h1>My Portfolio</h1>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div>
+      <h2>Hello, I'm Devipriya</h2>
+      <p>Web Developer | Student | Designer</p>
+
+      <a href="#contact" class="btn">Hire Me</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="container about">
+      <h2>About Me</h2>
+
+      <p>
+        I am a passionate web developer who loves creating beautiful
+        and responsive websites using HTML, CSS, and JavaScript.
+        I enjoy learning new technologies and building creative projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <div class="container">
+      <h2>My Skills</h2>
+
+      <div class="skills">
+        <div class="skill-box">
+          <h3>HTML</h3>
+          <p>Building webpage structure</p>
+        </div>
+
+        <div class="skill-box">
+          <h3>CSS</h3>
+          <p>Designing responsive websites</p>
+        </div>
+
+        <div class="skill-box">
+          <h3>JavaScript</h3>
+          <p>Adding website interactivity</p>
+        </div>
+
+        <div class="skill-box">
+          <h3>Python</h3>
+          <p>Programming and automation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+
+      <div class="projects">
+
+        <div class="project-box">
+          <h3>Portfolio Website</h3>
+          <p>
+            A responsive personal portfolio website using HTML and CSS.
+          </p>
+        </div>
+
+        <div class="project-box">
+          <h3>Student Management System</h3>
+          <p>
+            Simple project to manage student records using programming.
+          </p>
+        </div>
+
+        <div class="project-box">
+          <h3>Weather App</h3>
+          <p>
+            A weather application showing live weather updates.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container contact">
+      <h2>Contact Me</h2>
+
+      <p>Email: devipriya@example.com</p>
+      <p>Phone: +91 9876543210</p>
+      <p>Location: Andhra Pradesh, India</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Devipriya | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
